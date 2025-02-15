@@ -16,6 +16,7 @@ import About from "./components/About/About.tsx";
 import Projects from "./components/Projects/Projects.tsx";
 import ResumeNew from "./components/Resume/ResumeNew.tsx";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
     const [load, upadateLoad] = useState(true);
@@ -33,6 +34,7 @@ function App() {
             <Preloader load={load} />
             <div className="App" id={load ? "no-scroll" : "scroll"}>
                 <Analytics />
+                <SpeedInsights />
                 <Navbar />
                 <ScrollToTop />
                 <Routes>
