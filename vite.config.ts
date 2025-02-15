@@ -12,4 +12,24 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  optimizeDeps: {
+    include: ['pdfjs-dist'],
+  },
+  build: {
+    rollupOptions: {
+      plugins: [
+        {
+          name: 'pdf-worker',
+          transform(code, id) {
+            if (id.includes('pdf.worker.min.js')) {
+              return {
+                code: code,
+                map: null,
+              };
+            }
+          }
+        }
+      ]
+    }
+  }
 });

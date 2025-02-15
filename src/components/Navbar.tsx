@@ -77,20 +77,17 @@ function NavBar() {
                 to="/projetos"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }}/>{" "} Projetos
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/curriculo"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Currículo
               </Nav.Link>
             </Nav.Item>
 
