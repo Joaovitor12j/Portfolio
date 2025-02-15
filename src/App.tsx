@@ -13,6 +13,8 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About/About.tsx";
+import Projects from "./components/Projects/Projects.tsx";
+import ResumeNew from "./components/Resume/ResumeNew.tsx";
 
 function App() {
     const [load, upadateLoad] = useState(true);
@@ -34,7 +36,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/sobre-mim" element={<About />} />
-
+                    <Route path="/projetos" element={<Projects />} />
+                    <Route path="/curriculo" element={<ResumeNew />} />
                 </Routes>
                 <Footer />
             </div>
