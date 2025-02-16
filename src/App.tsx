@@ -16,7 +16,7 @@ import About from "./components/About/About.tsx";
 import Projects from "./components/Projects/Projects.tsx";
 import ResumeNew from "./components/Resume/ResumeNew.tsx";
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
     const [load, upadateLoad] = useState(true);
