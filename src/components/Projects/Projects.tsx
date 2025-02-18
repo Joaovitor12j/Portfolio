@@ -4,7 +4,7 @@ import Particle from "../Particle";
 import leaf from "../../assets/Projects/leaf.png";
 import emotion from "../../assets/Projects/emotion.png";
 import editor from "../../assets/Projects/codeEditor.png";
-import chatify from "../../assets/Projects/chatify.png";
+import crudApi from "/project_1.png";
 import suicide from "../../assets/Projects/suicide.png";
 import bitsOfCode from "../../assets/Projects/blog.png";
 
@@ -22,12 +22,12 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={crudApi}
               isBlog={false}
-              title="Projeto 1"
-              description="Lorem ipsum dolor sit amet. Qui doloribus ipsa qui officia magnam cum voluptas asperiores non culpa dolores et quod porro est consequatur ratione. Non numquam sint ut architecto consequatur qui corrupti excepturi non galisum voluptatem. Ut Quis laudantium in dicta rerum cum delectus perferendis quo impedit autem est molestias repudiandae in facere quasi."
-              ghLink="link"
-              demoLink="link"
+              title="CRUD CNPJ API"
+              description="Esse projeto é um CRUD simples com cadastro de cliente, validando o CNPJ utilizando uma API de consulta grátis de CNPJ. O frontend foi construido utilizando React, Vite, TypeScript e Tailwind CSS. O Backend foi feito utilizando NestJS."
+              ghLink="https://github.com/Joaovitor12j/crud-cnpj-api"
+              demoLink="https://cnpj-api.vercel.app/"
             />
           </Col>
 
