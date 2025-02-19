@@ -35,10 +35,10 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Projeto 2"
-              description="Lorem ipsum dolor sit amet. Qui doloribus ipsa qui officia magnam cum voluptas asperiores non culpa dolores et quod porro est consequatur ratione. Non numquam sint ut architecto consequatur qui corrupti excepturi non galisum voluptatem. Ut Quis laudantium in dicta rerum cum delectus perferendis quo impedit autem est molestias repudiandae in facere quasi."
+              title="Code & Coffee"
+              description="Plataforma de blog desenvolvida para hospedar os artigos que escrevo"
               ghLink="link"
-              demoLink="link"
+              demoLink="https://code-coffee-blog.vercel.app/"
             />
           </Col>
 
