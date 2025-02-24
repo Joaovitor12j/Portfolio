@@ -6,7 +6,7 @@ import emotion from "../../assets/Projects/emotion.png";
 import editor from "../../assets/Projects/codeEditor.png";
 import crudApi from "/project_1.png";
 import suicide from "../../assets/Projects/suicide.png";
-import bitsOfCode from "../../assets/Projects/blog.png";
+import codeCoffee from "/project_2.png";
 
 function Projects() {
   return (
@@ -33,10 +33,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={codeCoffee}
               isBlog={false}
               title="Code & Coffee"
-              description="Plataforma de blog desenvolvida para hospedar os artigos que escrevo"
+              description="Desenvolvi um site para hospedar e compartilhar meus próprios artigos, proporcionando uma experiência de leitura moderna e acessível.
+              O projeto foi construído com React e Vite no frontend, garantindo alta performance e um ambiente dinâmico. A plataforma foi desenvolvida com foco em desempenho, escalabilidade e usabilidade, garantindo um ambiente ideal para a publicação de conteúdos próprios."
               ghLink="link"
               demoLink="https://code-coffee-blog.vercel.app/"
             />
