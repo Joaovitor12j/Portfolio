@@ -33,7 +33,7 @@ function Projects() {
             <ProjectCard
               imgPath={DevMatch}
               isBlog={false}
-              title="Dev Match"
+              title="DevMatch"
               description="O DevMatch é uma plataforma em desenvolvimento que conecta desenvolvedores a projetos open-source, facilitando a descoberta de oportunidades de contribuição. A plataforma permite explorar projetos com filtros avançados, receber recomendações personalizadas com base nas habilidades do usuário e acompanhar as principais tendências do mundo open-source."
               demoLink="https://open-source-match.vercel.app/"
             />
