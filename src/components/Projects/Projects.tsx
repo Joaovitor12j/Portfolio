@@ -4,6 +4,7 @@ import Particle from "../Particle";
 import DevMatch from "../../assets/Projects/DevMatch.png";
 import CrudApi from "../../assets/Projects/CrudApi.png";
 import CodeCoffee from "../../assets/Projects/CodeCoffee.png";
+import LudusNexus from "../../assets/Projects/LudusNexus.png";
 
 function Projects() {
   return (
@@ -22,8 +23,13 @@ function Projects() {
               imgPath={CodeCoffee}
               isBlog={true}
               title="Code & Coffee"
-              description="Desenvolvi um site para hospedar e compartilhar meus próprios artigos, proporcionando uma experiência de leitura moderna e acessível.
-              O projeto foi construído com React e Vite no frontend, garantindo alta performance e um ambiente dinâmico. A plataforma foi desenvolvida com foco em desempenho, escalabilidade e usabilidade, garantindo um ambiente ideal para a publicação de conteúdos próprios."
+              description={[
+                "Site desenvolvido para hospedar e compartilhar meus próprios artigos, proporcionando uma experiência de leitura moderna e" +
+                " acessível.",
+                "O projeto foi construído com React e Vite no frontend, garantindo alta performance e um ambiente dinâmico.",
+                "Os artigos são salvos no Supabase para fácil acesso.",
+                "A plataforma foi desenvolvida com foco em desempenho, escalabilidade e usabilidade, garantindo um ambiente ideal para a publicação de conteúdos próprios."
+              ]}
               ghLink="https://code-coffee-blog.vercel.app"
               demoLink="https://code-coffee-blog.vercel.app"
             />
@@ -34,8 +40,38 @@ function Projects() {
               imgPath={DevMatch}
               isBlog={false}
               title="DevMatch"
-              description="O DevMatch é uma plataforma em desenvolvimento que conecta desenvolvedores a projetos open-source, facilitando a descoberta de oportunidades de contribuição. A plataforma permite explorar projetos com filtros avançados, receber recomendações personalizadas com base nas habilidades do usuário e acompanhar as principais tendências do mundo open-source."
+              description={[
+                "O DevMatch é uma plataforma que conecta desenvolvedores a projetos open-source.",
+                "Facilita a descoberta de oportunidades e recomenda projetos com base nas suas habilidades.",
+                "Acompanhar as principais tendências do mundo open-source!",
+                "Tecnologias utilizadas:",
+                "Frontend: React + Vite, TailwindCSS",
+                "Backend: Laravel",
+                "Bando de dados: MySQL",
+                "Fila: Laravel Queues",
+                "Integração com GitHub API"
+              ]}
               demoLink="https://open-source-match.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LudusNexus}
+              isBlog={false}
+              title="Ludus Nexus"
+              description={[
+                "Ludus Nexus é uma plataforma de matchmaking para jogadores de RPG e outros jogos cooperativos, ajudando a conectar pessoas com" +
+                " interesses semelhantes para formar grupos e iniciar aventuras.",
+                "Com uma interface intuitiva e moderna, a plataforma permite que jogadores encontrem mesas ativas, criem suas próprias campanhas e" +
+                " interajam com a comunidade.\n",
+                "Tecnologias Utilizadas: \n",
+                "Frontend: React + Vite, TailwindCSS\n",
+                "Backend: Laravel\n" ,
+                "Banco de Dados: MySQL\n",
+                "Design: UI/UX focada na experiência do jogador"
+              ]}
+              demoLink="https://ludus-nexus-demo.vercel.app"
             />
           </Col>
 

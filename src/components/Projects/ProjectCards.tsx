@@ -12,8 +12,17 @@ function ProjectCards(props) {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+          {Array.isArray(props.description) ? (
+            props.description.map((paragraph, index) => (
+              <p key={index} style={{ marginBottom: "10px" }}>
+                {paragraph}
+              </p>
+            ))
+          ) : (
+            <p>{props.description}</p>
+          )}
         </Card.Text>
+
         <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
