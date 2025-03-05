@@ -13,7 +13,7 @@ function ProjectCards(props) {
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {Array.isArray(props.description) ? (
-            props.description.map((paragraph, index) => (
+            props.description.map((paragraph: string, index: string) => (
               <p key={index} style={{ marginBottom: "10px" }}>
                 {paragraph}
               </p>
